@@ -1,0 +1,13 @@
+name: learning-stencil-module
+modules:
+    - name: github.com/getoutreach/stencil-template-base
+      prerelease: false
+    - name: github.com/getoutreach/stencil-base
+      prerelease: false
+    - name: github.com/getoutreach/stencil-circleci
+      prerelease: false
+arguments:
+    description: Stencil Module Learning Service
+    releaseOptions:
+        enablePrereleases: true
+    reportingTeam: Stencil Learners

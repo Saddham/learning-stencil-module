@@ -54,7 +54,7 @@ fi
 # in the library directory. This is because of the repo detection logic
 # which looks for the base directory through the existence of that file.
 if [[ $version != "local" ]]; then
-    if [[ -e "$libDir/service.yaml" ]]; then
-      rm "$libDir/service.yaml"
-    fi
+  if [[ -e "$libDir/service.yaml" ]]; then
+    rm "$libDir/service.yaml"
+  fi
 fi

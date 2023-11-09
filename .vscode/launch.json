@@ -47,7 +47,7 @@
           "from": "${env:HOME}/.asdf/installs/golang/1.20.8/go/src",
           "to": "/home/dev/.asdf/installs/golang/1.20.8/go/src"
         }
-      ],
+      ]
     },
     {
       "name": "Attach to dev container (in binary mode)",
@@ -57,9 +57,9 @@
       "mode": "remote",
       // <<Stencil::Block(vscodeRemoteDebugDevspaceBinary)>>
       "host": "127.0.0.1",
-      "port": 42097,
+      "port": 42097
       // <</Stencil::Block>>
-    },
+    }
     // <<Stencil::Block(vscodeLaunchConfigs)>>
 
     // <</Stencil::Block>>

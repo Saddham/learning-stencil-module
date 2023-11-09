@@ -5,6 +5,8 @@ arguments:
         type: list
         require: true
         default: ["hello", "goodbye"]
+modules:
+  - name: github.com/Saddham/learning-stencil-native-extension
 ## <<Stencil::Block(keys)>>
 
 ## <</Stencil::Block>>

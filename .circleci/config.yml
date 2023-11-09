@@ -11,10 +11,10 @@ parameters:
     default: false
 
 # Extra contexts to expose to all jobs below
-contexts: &contexts
-  []
+contexts:
+  &contexts []
   ## <<Stencil::Block(extraContexts)>>
-  
+
   ## <</Stencil::Block>>
 
 # Test configs to pass to test and cache jobs
@@ -27,15 +27,14 @@ test: &test
 
   ## <</Stencil::Block>>
 
-
 # Branches used for releasing code, pre-release or not
-release_branches: &release_branches
-  # Release branch
+release_branches: &release_branches # Release branch
   - release
   # Pre-releases branch
-  - 'main'
+  - "main"
 
-jobs:  {} 
+jobs:
+  {}
   ## <<Stencil::Block(circleJobs)>>
 
   ## <</Stencil::Block>>

@@ -6,6 +6,7 @@ modules:
       prerelease: false
     - name: github.com/getoutreach/stencil-circleci
       prerelease: false
+    - name: github.com/Saddham/learning-stencil-native-extension
 arguments:
     description: Stencil Module Learning Service
     releaseOptions:

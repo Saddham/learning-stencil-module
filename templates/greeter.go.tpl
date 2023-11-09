@@ -8,7 +8,17 @@ package greeter
 import "fmt"
 
 func main() {
-    fmt.Println("{{$greeting}}, world!")
+    if $greeting == "welcome" {
+        msg := {{ extensions.Call "github.com/Saddham/learning-stencil-native-extension.WelcomeMessage" }}
+
+        fmt.Println(msg)
+    } else if $greeting == "goodbye" {
+        msg := {{ extensions.Call "github.com/Saddham/learning-stencil-native-extension.GoodbyeMessage" }}
+
+        fmt.Println(msg)
+    } else {
+        fmt.Println("{{$greeting}}, world!")
+    }
 }
 
 {{- end -}}
